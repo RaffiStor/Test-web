@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f8fafc;
+  color:#0f172a;
+  font-family:Arial,sans-serif;
+}
+
+/* ========================= */
+/* LOGIN PREMIUM */
+/* ========================= */
+
+.login-container{
+
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #1e40af,
+    #0f172a
+  );
+
+  padding:20px;
+  position:relative;
+  overflow:hidden;
+
+}
+
+.login-container::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  background:
+  rgba(
+    255,
+    255,
+    255,
+    0.05
+  );
+
+  border-radius:50%;
+
+  top:-200px;
+  left:-100px;
+
+  filter:blur(80px);
+
+}
+
+.login-container::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:400px;
+  height:400px;
+
+  background:
+  rgba(
+    37,
+    99,
+    235,
+    0.3
+  );
+
+  border-radius:50%;
+
+  bottom:-150px;
+  right:-100px;
+
+  filter:blur(80px);
+
+}
+
+.login-card{
+
+  width:100%;
+  max-width:450px;
+
+  padding:40px;
+
+  border-radius:30px;
+
+  backdrop-filter:blur(20px);
+
+  background:
+  rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  border:
+  1px solid
+  rgba(
+    255,
+    255,
+    255,
+    0.2
+  );
+
+  box-shadow:
+  0 20px 60px
+  rgba(
+    0,
+    0,
+    0,
+    0.3
+  );
+
+  z-index:10;
+
+}
+
+.logo-box{
+
+  text-align:center;
+  margin-bottom:35px;
+
+}
+
+.logo-circle{
+
+  width:90px;
+  height:90px;
+
+  border-radius:50%;
+
+  margin:auto;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:35px;
+  font-weight:bold;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #60a5fa,
+    #2563eb
+  );
+
+}
+
+.logo-box h1{
+
+  color:white;
+  font-size:28px;
+  margin-top:20px;
+
+}
+
+.logo-box p{
+
+  color:#cbd5e1;
+
+}
+
+.form{
+
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+
+}
+
+.input-group{
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  background:
+  rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+
+  color:white;
+
+}
+
+.input-group input{
+
+  flex:1;
+
+  background:none;
+  border:none;
+  outline:none;
+
+  color:white;
+
+}
+
+.input-group input::placeholder{
+
+  color:#cbd5e1;
+
+}
+
+.input-group button{
+
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+
+}
+
+.login-btn{
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:white;
+
+  color:#2563eb;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+.login-btn:hover{
+
+  transform:translateY(-2px);
+
+  background:#eff6ff;
+
+}
+
+.login-btn:disabled{
+
+  opacity:.7;
+  cursor:not-allowed;
+
+}
+
+/* ========================= */
+/* DASHBOARD */
+/* ========================= */
+
+.sidebar{
+  background:#2563eb;
+  color:white;
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.btn-primary{
+  background:#2563eb;
+  color:white;
+  padding:12px 20px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.btn-primary:hover{
+  background:#1e40af;
+}
